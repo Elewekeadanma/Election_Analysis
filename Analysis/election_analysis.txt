@@ -1,105 +1,13 @@
-Counties in the Election
-Arapahoe
-Denver
-Jefferson
 
-
-
-
-https://www.youtube.com/channel/UCKTSy3Jsa2zczjAptE7isyQ/
-
-#   The data we need to retrieve.
-#   1.  The total number of votes cast
-#   2.  A complete list of candidates who received votes
-#   3.  The percentage of votes each candidate won
-#   4.  The total number of votes each candidate won
-#   5.  The winner of the election based on popular vote.
-import csv
-import os
-#   Assign a variable for the file to load and the path.
-file_to_load = os.path.join("Resources", "election_results.csv")
-#Assign a variable to save the file to a path.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
-
-total_votes = 0
-
-#Candidate Options
-candidate_options = []
-
-#Open the election results and read the file
-with open(file_to_load) as election_data:
-
-#   To do: perform analysis
-    file_reader = csv.reader(election_data)
-    
-    #   Read the header row
-    headers = next(file_reader)
-    
-     #Print each row in the CSV file
-    for row in file_reader:
-        total_votes = total_votes + 1
-   
-   
-    #   print the candidate name from each row
-        candidate_name = row[2]
-
-    # Add the candidate name to the candidate list.
-        candidate_options.append(candidate_name)
-
-    #   print the candidate list.
-    print(candidate_options)
-        
-        
-   
-#   Close the file
-#outfile.close()
------------------------------------------------------------------
-#   The data we need to retrieve.
-#   1.  The total number of votes cast
-#   2.  A complete list of candidates who received votes
-#   3.  The percentage of votes each candidate won
-#   4.  The total number of votes each candidate won
-#   5.  The winner of the election based on popular vote.
-import csv
-import os
-#   Assign a variable for the file to load and the path.
-file_to_load = os.path.join("Resources", "election_results.csv")
-#Assign a variable to save the file to a path.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
-
-total_votes = 0
-
-#Candidate Options
-candidate_options = []
-
-#Open the election results and read the file
-with open(file_to_load) as election_data:
-
-#   To do: perform analysis
-    file_reader = csv.reader(election_data)
-    
-    #   Read the header row
-    headers = next(file_reader)
-    
-     #Print each row in the CSV file
-    for row in file_reader:
-        total_votes = total_votes + 1
-   
-   
-    #   print the candidate name from each row
-        candidate_name = row[2]
-
-    #   If the candidate does not match any existing candidate..
-        if candidate_name not in candidate_options:
-        
-
-    # Add the candidate name to the candidate list.
-            candidate_options.append(candidate_name)
-
-    #   print the candidate list.
-    print(candidate_options)
-        
-        
-   
-#   Close the file
-#outfile.close()
+Election Results
+-------------------
+Total Votes:  369,711
+----------------------
+Charles Casper Stockham:23.0 (85,213)
+Diana DeGette:73.8 (272,892)
+Raymon Anthony Doane:3.1 (11,606)
+--------------------------------------------------
+Winner: Diana DeGette
+Winnning Vote Count: 272,892
+winning Percentage: 73.8%
+ --------------------------------------------
