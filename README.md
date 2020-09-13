@@ -24,3 +24,4 @@ Software: Python 3.7.6, Visual Studio, 1.49.0
 ---
 ![Election_Results](https://github.com/Elewekeadanma/Election_Analysis/blob/master/election_results.png)
 ---
+
