@@ -21,3 +21,6 @@ Software: Python 3.7.6, Visual Studio, 1.49.0
   - Diana DeGette received 272,892 votes which was 73% of the total votes.
   - Raymon Anthony Doane received 11,606 votes which was 3% of the total votes.
 * Diana DeGette won the election with 272,892 votes which was an astounding 73% of the total votes.
+---
+![Election_Results](https://github.com/Elewekeadanma/Election_Analysis/blob/master/election_results.png)
+---
